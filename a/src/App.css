@@ -1,0 +1,129 @@
+.app {
+  max-width: 500px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  padding: 40px 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.app h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.add {
+  width: 100%;
+}
+
+.add-task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-task input {
+  width: 80%;
+  padding: 6px 20px 6px 10px;
+  font-size: 20px;
+  border: rgb(178, 177, 177) 2.5px solid;
+  border-radius: 5px;
+}
+
+.add-task input::placeholder {
+  color: rgba(159, 158, 158, 0.706);
+}
+
+.add-task input:focus {
+  border-color: rgb(9, 221, 9) !important;
+  outline: none !important;
+  box-shadow: 0 0 10px #71ce96;
+}
+.add-task button {
+  width: 42px;
+  font-size: 25px;
+  height: 38px;
+  box-shadow: 0 0 10px #71ce96;
+  border: #4eb17a solid 2.5px;
+  border-radius: 4px;
+  background-color: #89d7ad;
+  transition: transform 0.2s, background-color 0.3s, color 0.4s ease;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  box-shadow: 0 0 20px 4px #71ce96;
+  background-color: #4eb17a;
+  color: white;
+}
+
+.add-task button:active {
+  transform: scale(1.2);
+}
+
+.date {
+  padding-left: 5px;
+  font-weight: 500;
+  color: #727272;
+}
+
+/* -------- task -------- */
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  user-select: none;
+}
+
+.task-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-info input {
+  position: relative;
+  border-radius: 2px;
+  padding: 8px;
+  background: #f6f6f6;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2.5px solid #c5c5c5;
+}
+
+.completed {
+  color: #757575;
+  text-decoration: line-through;
+}
+
+.completed input {
+  background: #56b8ff;
+  border-color: #56b8ff;
+}
+
+/* input[type="checkbox"]:checked { */
+  /* background: #56b8ff; */
+  /* border-color: #56b8ff; */
+/* } */
+
+/* -------- statistics -------- */
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10px 0px 0px;
+  justify-content: end;
+  align-items: end;
+  color: #b9b9b9;
+  font-size: 12px;
+}
